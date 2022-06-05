@@ -116,15 +116,15 @@
              const result = () => {
                  for (let i = 0; i < units.length; i++) {
                      if (u <= units[i] && d >= distances[i]) {
-                         return "combo!"
+                         return "Combo"
                      }
                      if (i != 0) {
                          if (u > units[i - 1] && u <= units[i] && d >= distances[i]) {
-                             return "combo";
+                             return "Combo";
                          }
                      }
                  }
-                 return "no combo"
+                 return "No Combo"
              }
              document.getElementById("result").innerHTML = result();
              document.getElementById("url").style.visibility = "visible";
